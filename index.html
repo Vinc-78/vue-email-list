@@ -32,7 +32,7 @@
 
         <button @click="generaEmail">Genera Email</button>
 
-        <ul v-for="elemento, index in arrayEmail">
+        <ul  v-if="pandingCall === 10" v-for="elemento, index in arrayEmail">
           <li>{{index+1}} - {{elemento}}</li>
         </ul>
         

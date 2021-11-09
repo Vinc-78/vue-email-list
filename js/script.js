@@ -5,6 +5,7 @@ new Vue({
   data: {
     urlAPI: "https://flynn.boolean.careers/exercises/api/random/mail",
     arrayEmail: [],
+
     
     pandingCall: 0,
     
@@ -26,6 +27,8 @@ new Vue({
           const rispostaServer = ajaxResponse.data;
 
           this.arrayEmail.push(rispostaServer.response);
+
+          this.pandingCall++
 
         })
 
