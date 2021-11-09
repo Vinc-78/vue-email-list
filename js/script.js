@@ -16,6 +16,8 @@ new Vue({
   methods: {
 
     generaEmail() {
+
+      this.pandingCall= 0,
       
       this.arrayEmail = [];
 
